@@ -58,8 +58,8 @@ game = {
   draw: function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    for (let i = 0; i < game.numCells; i++) {
-      for (let j = 0; j < game.numCells; j++) {
+    for (let i = 0; i < game.viewWidth; i++) {
+      for (let j = 0; j < game.viewHeight; j++) {
         map.getTile(i, j).draw();
       }
     }
